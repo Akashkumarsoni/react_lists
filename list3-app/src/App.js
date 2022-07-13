@@ -7,6 +7,7 @@ export class App extends Component {
     right: ["ASP.NET", "C#", "VB.NET", "Java","PHP","Python"],
   };
   rightshift = (e) => {
+
     var select = document.getElementById("lefts");
     var selected = [...select.selectedOptions].map((option) => option.value);
     selected.forEach(i=>{
@@ -20,6 +21,7 @@ export class App extends Component {
     });
   };
   leftshift = (e) => {
+   
     var select = document.getElementById("rights");
     var selected = [...select.selectedOptions].map((option) => option.value);
     selected.forEach(i=>{
